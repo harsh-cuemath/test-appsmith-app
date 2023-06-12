@@ -1,0 +1,214 @@
+{
+  "unpublishedPage": {
+    "name": "Home",
+    "slug": "home",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 4896,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 380,
+          "containerStyle": "none",
+          "snapRows": 124,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 78,
+          "minHeight": 1292,
+          "dynamicTriggerPathList": [],
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "boxShadow": "none",
+              "mobileBottomRow": 21,
+              "widgetName": "Image1",
+              "displayName": "Image",
+              "iconSVG": "/static/media/icon.52d8fb963abcb95c79b10f1553389f22.svg",
+              "topRow": 0,
+              "bottomRow": 6,
+              "parentRowSpace": 10,
+              "type": "IMAGE_WIDGET",
+              "hideCard": false,
+              "mobileRightColumn": 7,
+              "animateLoading": true,
+              "parentColumnSpace": 12.53125,
+              "dynamicTriggerPathList": [],
+              "imageShape": "RECTANGLE",
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "defaultImage": "https://static.qumath.in/static/next/_next/static/images/cuemath-dark-logo-9f8e8ee85028a3943d4cb7d90b9db2e7.svg",
+              "key": "piqilegsao",
+              "image": "",
+              "isDeprecated": false,
+              "rightColumn": 15,
+              "objectFit": "cover",
+              "widgetId": "20zw0puwkf",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 9,
+              "maxZoomLevel": 1,
+              "enableDownload": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 0,
+              "enableRotation": false
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "mobileBottomRow": 40,
+              "setAdaptiveYMin": true,
+              "widgetName": "Chart1",
+              "allowScroll": false,
+              "dynamicPropertyPathList": [],
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+              "searchTags": [
+                "graph",
+                "visuals",
+                "visualisations"
+              ],
+              "topRow": 8,
+              "bottomRow": 32,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "mobileRightColumn": 23,
+              "chartData": {
+                "8vhcnsdfbi": {
+                  "seriesName": "% Completed",
+                  "data": "{{ \n  Api3.data.map((row) => \n  {\n    return {\n      x: row.scheduled_datestr,\n      y: 100* row.per_completed_by_scheduled\n    }\n  })\n}}"
+                }
+              },
+              "animateLoading": true,
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 12.53125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "chartData.8vhcnsdfbi.data"
+                }
+              ],
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ],
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion",
+                    "alignCaptionWithCanvas": 1,
+                    "captionFontSize": "24",
+                    "captionAlignment": "center",
+                    "captionPadding": "20",
+                    "captionFontColor": "#231F20",
+                    "legendIconSides": "4",
+                    "legendIconBgAlpha": "100",
+                    "legendIconAlpha": "100",
+                    "legendPosition": "top",
+                    "canvasPadding": "0",
+                    "chartLeftMargin": "20",
+                    "chartTopMargin": "10",
+                    "chartRightMargin": "40",
+                    "chartBottomMargin": "10",
+                    "xAxisNameFontSize": "14",
+                    "labelFontSize": "12",
+                    "labelFontColor": "#716e6e",
+                    "xAxisNameFontColor": "#716e6e",
+                    "yAxisNameFontSize": "14",
+                    "yAxisValueFontSize": "12",
+                    "yAxisValueFontColor": "#716e6e",
+                    "yAxisNameFontColor": "#716e6e"
+                  }
+                }
+              },
+              "key": "i63iutv7qq",
+              "isDeprecated": false,
+              "rightColumn": 60,
+              "widgetId": "7xey7s32oi",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "minWidth": 450,
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 8,
+              "responsiveBehavior": "fill",
+              "yAxisName": "% Classroom Completed",
+              "chartName": "Classroom Completed",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 0,
+              "xAxisName": "Scheduled Date",
+              "chartType": "LINE_CHART"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Home_Api3",
+              "name": "Api3",
+              "confirmBeforeExecute": false,
+              "pluginType": "SAAS",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Home",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "6486fc3d16233e7a241868ee_6486fc3d16233e7a241868f0"
+}
